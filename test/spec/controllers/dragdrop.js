@@ -6,14 +6,15 @@ describe('Controller: DragdropCtrl', function () {
   beforeEach(module('taskstreamApp'));
 
   var DragdropCtrl,
-    scope,
-    timeOut;
+    scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope, $timeout) {
     scope = $rootScope.$new();
+    var l = $timeout;
     DragdropCtrl = $controller('DragdropCtrl', {
-      $scope: scope
+      $scope: scope,
+      $timeout: l
     });
   }));
 

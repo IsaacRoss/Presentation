@@ -93,7 +93,7 @@ module.exports = function (grunt) {
       options: {
         jshintrc: '.jshintrc',
         reporter: require('jshint-stylish'),
-        ignores: ['<%= yeoman.app %>/vendor/{,*/}*.js']
+        ignores: ['<%= yeoman.app %>/vendor/{,*/}*.js', '<%= yeoman.app %>/scripts/controllers/typeahead.js']
       },
       all: [
         'Gruntfile.js',

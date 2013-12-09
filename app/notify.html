@@ -6,6 +6,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 <title>Notifications Countdown</title>
+<link rel="stylesheet" href="styles/bootstrap.css">
 <style>
 body { margin: 10px; font-family: sans-serif; }
 #statusWrapper { background: #eef; margin: 1em 0; padding: 0.5em; font-size: x-small; text-align: right; }
@@ -13,7 +14,7 @@ body { margin: 10px; font-family: sans-serif; }
 #request, #request input { font-size: 24pt; }
 #request input { text-align: center; color: #77a; }
 #request p { margin: 0.2em 0; }
-#request button { border: 5px inset #d60; font-size: 24px; background: #e60; color: white; }
+#request button { width: 100px;}
 @-webkit-keyframes pulse {
  from { margin-right: 400px; }
  to { margin-right: 0; }
@@ -90,18 +91,23 @@ window.onload = function() {
   </ul>
   <h3 class="text-muted">Taskstream 2.5</h3>
 </div>
-<div id="statusWrapper"><span id="status"></span></div> 
-<div id="request"> 
-  <p>Remind me to</p> 
-  <p> 
-    <input id="message" value="wake up!" /> 
-  </p> 
-  <p>in</p> 
-  <p> 
-    <input id="timeString" value="5 seconds" /> 
-  </p> 
-  <p> 
-    <button id="scheduleIt">Go!</button> 
-  </p> 
-</div> 
+<div class="container">
+  <div class="content">
+  <div id="statusWrapper"><span id="status"></span></div> 
+  <div id="request"> 
+    <p>Remind me to</p> 
+    <p> 
+      <input id="message" value="wake up!" /> 
+    </p> 
+    <p>in</p> 
+    <p> 
+      <input id="timeString" value="5 seconds" /> 
+    </p> 
+    <p> 
+      <button id="scheduleIt" class="btn btn-info">Go!</button> 
+    </p> 
+  </div> 
+  </div>
+</div>
+
 </body>

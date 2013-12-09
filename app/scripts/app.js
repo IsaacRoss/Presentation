@@ -5,7 +5,9 @@ angular.module('taskstreamApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngDragDrop'
+  'ngDragDrop',
+  'ngAnimate',
+  'angular-growl'
 ])
   .config(function ($routeProvider) {
     $routeProvider

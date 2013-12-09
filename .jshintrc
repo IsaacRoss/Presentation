@@ -18,6 +18,7 @@
   "smarttabs": true,
   "-W099": true,
   "globals": {
-    "angular": false
+    "angular": false,
+    "TweenMax": true
   }
 }

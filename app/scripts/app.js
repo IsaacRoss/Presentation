@@ -8,7 +8,8 @@ angular.module('taskstreamApp', [
   'ngDragDrop',
   'ngAnimate',
   'ui.bootstrap',
-  'angular-growl'
+  'angular-growl',
+  'demoServices'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,6 +24,10 @@ angular.module('taskstreamApp', [
       .when('/typeahead', {
         templateUrl: 'views/typeahead.html',
         controller: 'TypeaheadCtrl'
+      })
+      .when('/book', {
+        templateUrl: 'views/book.html',
+        controller: 'BookCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,34 +1,77 @@
+<style>
+/* MOVIE POSTERS */
+#technologies { list-style:none; margin:100px 0; height:550px; }
+#technologies li { display:inline; float:left;
+  -webkit-perspective: 500; -webkit-transform-style: preserve-3d;
+  -webkit-transition-property: perspective; -webkit-transition-duration: 0.5s; }
+#technologies li:hover { -webkit-perspective: 5000; }
+  
+#technologies li img { border:10px solid #fcfafa; -webkit-transform: rotateY(30deg);
+  -moz-box-shadow:0 3px 10px #888; -webkit-box-shadow:0 3px 10px #888;
+  -webkit-transition-property: transform; -webkit-transition-duration: 0.5s;
+  width:250px; 
+  height:330px;}
+#technologies li:hover img { -webkit-transform: rotateY(0deg); }
+
+.techinfo { border:10px solid #fcfafa; padding:2px; width:200px; height:350px; background-color:#deddcd; margin:-320px 0 0 55px; position:absolute;
+  -moz-box-shadow:0 20px 40px #888; -webkit-box-shadow:0 20px 40px #888;
+  -webkit-transform: translateZ(-100px) rotateY(30deg);
+  -webkit-transition-property: transform, box-shadow, margin; -webkit-transition-duration: 0.5s; }
+  
+#technologies li:hover .techinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:10px 0 0 30px; }
+  
+.techinfo h3 { color:#7a3f3a; font-variant: small-caps; font-family:Georgia,serif,Times; text-align:center; padding-bottom:15px; }
+.techinfo p { padding-bottom:15px; }
+.techinfo a { background-color:#7a3f3a; padding:5px 10px; color:#eee; text-decoration:none; display:block; width:80px; text-align:center; margin:0 auto;
+  -moz-border-radius:5px; -webkit-border-radius:5px; }
+.techinfo a:hover, .techinfo a:focus { background-color:#6a191f; color:#fff; }
+</style>
+
+
+
 <div class="header">
   <ul class="nav nav-pills pull-right">
     <li class="active"><a ng-href="#">Home</a></li>
     <li><a ng-href="#/dragdrop">Manage Technology</a></li>
     <li><a ng-href="#/typeahead">Fill Form</a></li>
+    <li><a ng-href="#/book">Manage Books</a></li>
   </ul>
   <h3 class="text-muted">Taskstream 2.5</h3>
 </div>
 
 <div class="jumbotron">
   <h1>Moving Forward</h1>
-  <p class="lead">
-    <img src="images/languages.png" width="600px" height="400px" alt="the future"><br>
-    To the front (end) of the web. 
-  </p>
+  <p>...Or, moving to the front-end, and bringing it to life </p>
+
+<ul id="technologies">
+      <li>
+        <img src="images/css3.jpg" alt="HTML5" />
+        <div class="techinfo">
+          <h3>CSS3</h3>
+          <p>An upgrade to css that allows full blown animations of elements without the need for any complex javascript functions.</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/html5-display.png" alt="CSS3" />
+        <div class="techinfo">
+          <h3>HTML5</h3>
+          <p>Introduces a standard API for dealing with all elements in the browser, and introduces new elements for multimedia</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/angular.png" alt="AngularJS" />
+        <div class="techinfo">
+          <h3>AngularJS</h3>
+          <p>A framework providing a true MVC style approach to front end development, allowing for more re-usablity, and designed with testability in mind</p>
+        </div>
+      </li>
+    </ul>
+
   <p><a class="btn btn-lg btn-success" ng-href="presentation.html">Show me!</a></p>
 </div>
 
 <div class="row marketing">
-  <h4>HTML5</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>CSS3</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Testability</h4>
-  <p>Fully blown testing for the front end. Everything from unit tests to cross-browser end to end tests can be done using AngularJs.</p>
+ 
 </div>
 
 <div class="footer">

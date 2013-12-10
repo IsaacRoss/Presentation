@@ -251,6 +251,24 @@ a:focus {
     3D positioning along Z axis.
 */
 
+#begin .footnote{
+    text-align: right;
+    font-size: 32px;
+}
+
+#issues q{
+    position: absolute;
+    top: -1em;
+}
+
+#issues ul{
+    margin-top:175px;
+    margin-left:100px;
+    list-style-type: circle;
+}
+
+
+
 #title {
     padding: 0;
 }

@@ -13,12 +13,12 @@
   height:330px;}
 #technologies li:hover img { -webkit-transform: rotateY(0deg); }
 
-.techinfo { border:10px solid #fcfafa; padding:2px; width:200px; height:350px; background-color:#deddcd; margin:-320px 0 0 55px; position:absolute;
+.techinfo { border:10px solid #fcfafa; padding:2px; width:200px; height:350px; background-color:#deddcd; margin:-320px 0 0 55px; position:absolute; z-index:-5;
   -moz-box-shadow:0 20px 40px #888; -webkit-box-shadow:0 20px 40px #888;
   -webkit-transform: translateZ(-100px) rotateY(30deg);
   -webkit-transition-property: transform, box-shadow, margin; -webkit-transition-duration: 0.5s; }
   
-#technologies li:hover .techinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:10px 0 0 30px; }
+#technologies li:hover .techinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:10px 0 0 30px; z-index: 5; }
   
 .techinfo h3 { color:#7a3f3a; font-variant: small-caps; font-family:Georgia,serif,Times; text-align:center; padding-bottom:15px; }
 .techinfo p { padding-bottom:15px; }

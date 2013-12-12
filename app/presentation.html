@@ -229,7 +229,7 @@
         
     -->
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p><b>Actually</b> these technologies and frameworks can help us improve our support for accessibility </p>
+        <p><b>Actually,</b> these technologies and frameworks can help us improve our support for accessibility </p>
         <img class="access" src="../images/accessibility.png"/>
     </div>
 
@@ -260,12 +260,19 @@
    
 
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>Responsive Design <b>can be</b> used with <b class="imagination">Mobile Browsers</b></p>
+        <p>Responsive Design aids in an enhanced user experience in <b class="imagination">Mobile Browsers</b></p>
+    </div>
+
+    <div id="mobvid" class="step" data-x="8000" data-y="100" data-scale="1 ">
+      <video controls id="myvideo">
+        <source src="../media/goodfilms.mp4"></source>
+     </video>
+     <canvas id="canvas"></canvas>
     </div>
 
     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
         <p></p>
-        <q><a href="index.html">Go back Home</a></q>
+        <q><a href="index.html">Back to Taskstream</a></q>
     </div>
 
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
@@ -371,6 +378,34 @@ $(document).ready(function(){
     $('#tiny').on('click', function(e){
         $('.access').toggleClass("showcomp");
     });
+
+
+    document.addEventListener('DOMContentLoaded', function(){
+    var v = document.getElementById('video');
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+  
+    //var cw = Math.floor(canvas.clientWidth / 100);
+    //var ch = Math.floor(canvas.clientHeight / 100);
+    var cw = Math.floor(canvas.clientWidth);
+    var ch = Math.floor(canvas.clientHeight);
+    canvas.width = cw;
+    canvas.height = ch;
+  
+    v.addEventListener('play', function(){
+      draw(this,context,cw,ch);
+    },false);
+    
+  },false);
+
+  function draw(v,c,w,h) {
+    if(v.paused || v.ended) return false;
+    c.drawImage(v,0,0,w,h);
+    setTimeout(draw,20,v,c,w,h);
+  }
+
+
+
 });
 </script>
 

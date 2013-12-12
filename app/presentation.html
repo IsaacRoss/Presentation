@@ -110,28 +110,46 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div id="issues" class="step slide" data-x="0" data-y="-1500">
+
+
+    <div id="evolve" class="step slide" data-x="0" data-y="-1500">
+        <q>The web has been evolving at a breakneck pace. Customers that are using modern browsers,
+        expect to be given a modern solution for managing their content. 
+       </q>
+    </div>
+
+
+    <div id="issues" class="step slide" data-x="1000" data-y="-1500">
         <q>Issues with current Front-End Strategy.</q>
             <ul>
-                <li>Our tools should be more intuitive.</li>
-                <li>All or nothing approach has paralyzed us. </li>
-                <li>Lack of standard coding approach. </li>
-                <li>Site is difficult to navigate. </li>
-                <li>Accessibility is default, not an option. </li>
-                <li>Massive code-base, leading to:
-                    <li class="subtext">Slower loading of pages (higher bandwith consumption)</li>
-                    <li class="subtext">Exponential increase in dev effort to maintain</li>
-                    <li class="subtext">More code, more bugs.</li>
-                </li>
+                <li>Our tools should be very intuitive (improvement possible)</li>
+                <li>Site is difficult to navigate</li>
+                <li>Accessibility should not be the main driver of design</li>
+                <li>All or nothing approach has paralyzed us </li>
+                <li>Code related Impediments</li>
             </ul>
     </div>
 
-    <div id="evolve" class="step slide" data-x="1000" data-y="-2500">
-        <q>The web has been evolving at a breakneck pace. Our customers expect Taskstream to function in a way similar to their mobile devices and tablets. 
-        <strong>In a natural way</strong>
+    <div id="codeissues" class="step slide" data-x="2000" data-y="-1500">
+        <q>Existing Front-End Impediments</q>
+        <ul>
+            <li>Legacy code does not take advantage of new standards and is coupled to design</li>
+            <li>Testing of current front-end logic is difficult and time consuming</li>
+            <li>Massive front-end codebase, leading to:
+                <li class="subtext">Slower loading of pages (higher bandwith consumption)</li>
+                <li class="subtext">Exponential increase in dev effort to maintain</li>
+                <li class="subtext">More code = more bugs</li>
+            </li>
+        </ul>
         <br>
-       </q>
+        <div class="cansolve">These issues are solvable.</div>
     </div>
+
+
+    <div id="how" class="step" data-x="-1000" data-y ="-2500">
+        <div class="how">How can we address some of these problems?</div>
+    </div>
+
 
 
     <!--
@@ -144,11 +162,7 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">...</span>
-        <h1>Native To Browser<sup></sup></h1>
-        <span class="footnote"><sup>*</sup> html, css, and JavaScript</span>
-    </div>
+    
 
     <!--
         
@@ -159,14 +173,47 @@
         
     -->
     <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It's time for us to embrace<strong> modern web tools</strong>
+        <p>By embracing<strong> modern web tools</strong>
             <hr>
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>AngularJs</li>
+            <li>AngularJS</li>
         </ul>
     </div>
+
+    <div id="jobs" class="step" data-x="2000" data-y="-2500">
+        <img class="bottom shadow" src="../images/jobs.jpg"/>
+        <img class="top shadow shifted" src="../images/htmlcssevo.png"/>
+    </div>
+
+    <div id="jsframe" class="step" data-x="1000" data-y="-2500">
+        <img src="../images/hotjs.png"/>
+    </div>
+
+   
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="1">
+        <span class="try"></span>
+        <h1>Native To Every Modern Browser<sup></sup></h1>
+        <span class="footnote"><sup></sup>(Desktops, SmartPhones, Tablets)</span>
+    </div>
+
+     <div id="ie8" class="step" data-x="3000" data-y="3000" data-z="-5000" data-rotate="360" data-scale="1">
+        <p><b>What about non-modern browsers</b> (IE8)?</p>
+    </div>
+
+
+
+     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>We <b class="positioning">can</b>, <b class="rotating">shift angles</b> gracefully and <b class="scaling">fall back</b> to existing solutions for old browsers</p>
+    </div>
+
+     <div id="sidenote" class="step" data-x="3800" data-y="-4000" data-z="-300" data-scale=3>
+        Additional considerations for outdated browsers.
+        <img id="compatability" src="../images/compat.png"/>
+    </div>
+
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
         <p>What about section<b>508</b> <span class="thoughts"></span></p>
@@ -182,8 +229,11 @@
         
     -->
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p><b>smaller</b> issue than anticipated</p>
+        <p><b>Actually</b> these technologies and frameworks can help us improve our support for accessibility </p>
+        <img class="access" src="../images/accessibility.png"/>
     </div>
+
+   
 
     <!--
         
@@ -205,9 +255,9 @@
         Only one current step has the `present` class.
         
     -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>We <b class="positioning">can</b>, <b class="rotating">shift angles</b> gracefully and <b class="scaling">fall back</b> to existing solutions for the blind</p>
-    </div>
+   
+
+   
 
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
         <p>Responsive Design <b>can be</b> used with <b class="imagination">Mobile Browsers</b></p>
@@ -236,7 +286,7 @@
     -->
     <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
         <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+        <span class="footnote">*Overview</span>
     </div>
 
     <!--
@@ -309,6 +359,21 @@ if ("ontouchstart" in document.documentElement) {
 -->
 <script src="vendor/js/impress.js"></script>
 <script>impress().init();</script>
+<script src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#codeissues').on('click', function(e){
+       $('#codeissues div.cansolve').toggleClass("showit")
+    });
+    $('#sidenote').on('click', function(e){
+        $('#compatability').toggleClass("showcomp");
+    });
+    $('#tiny').on('click', function(e){
+        $('.access').toggleClass("showcomp");
+    });
+});
+</script>
+
 
 <!--
     

@@ -9,14 +9,15 @@
 </div>
 
 
-
-<div class='container-fluid'>
-    <pre>What state is your university in?</pre>
-    <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:15">
-</div>
-<hr>
-<div class='container-fluid'>
-    <pre>Enter a movie you like: {{movie | json }}</pre>
-    <input type="text" ng-model="movie" typeahead="movie for movie in movies | filter:$viewValue | limitTo:20">
+<div id="lookaheadwrapper">
+    <div class='container-fluid'>
+        <pre>What state is your university in?</pre>
+        <input type="text" class="lookahead" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:15">
+    </div>
+    <hr>
+    <div class='container-fluid'>
+        <pre>Enter a movie you like: {{movie | json }}</pre>
+        <input type="text" class="lookahead" ng-model="movie" typeahead="movie for movie in movies | filter:$viewValue | limitTo:20">
+    </div>
 </div>
 

@@ -224,10 +224,11 @@ a:focus {
     3D positioning along Z axis.
 */
 
-#begin .footnote{
+#begin .footnote, #evolve .footnote{
     text-align: right;
     font-size: 32px;
 }
+
 
 #issues q, #codeissues q{
     position: absolute;
@@ -463,6 +464,26 @@ a:focus {
     font-size: 78px;
 }
 
+#its .why{
+    font-size: 20px;
+    opacity: 0;
+}
+
+#its.present .why{
+      opacity: 1;
+    -webkit-transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+    -ms-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out;
+
+     -webkit-transition: opacity 3s, -webkit-transform 3s 3s;
+    -moz-transition:    opacity 3s,    -moz-transform 3s 3s;
+    -ms-transition:     opacity 3s,     -ms-transform 3s 3s;
+    -o-transition:      opacity 3s,      -o-transform 3s 3s;
+    transition:         opacity 3s,         transform 3s 3s;
+}
+
 
 
 
@@ -694,6 +715,11 @@ a:focus {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+
+  #jobs img.bigger{
+    width:700px;
+    height:400px;
   }
 
   #jobs img.top {
